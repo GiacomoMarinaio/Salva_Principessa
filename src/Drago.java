@@ -1,20 +1,51 @@
-public class Drago {
-    private String nome;
-    private Cavaliere cacciatore;
+public abstract class Drago {
+    protected String nome;
+    protected int forza;
+    protected Principessa principessa;
+    protected Cavaliere cacciatore;
+    protected boolean vivo;
 
-    public Drago(String nome){
+    public Drago(String nome, int forza) {
         this.nome = nome;
+        this.forza = forza;
+        this.principessa = null;
+        this.cacciatore = null;
+        this.vivo = true;
     }
 
-    public String Distruggi(){
-        return this.nome + "sta distruggendo il villaggio";
+    public String getNome() {
+        return nome;
     }
 
-    public Cavaliere getCacciatore(){
-        return cacciatore;
+    public int getForza() {
+        return forza;
     }
 
-    public void getCacciatore(Cavaliere cacciatore){
-        this.cacciatore = cacciatore;
+    public boolean isVivo() {
+        return vivo;
+    }
+
+    public void imprigionaPrincipessa(Principessa p) {
+        if (principessa == null && p != null && !p.isImprigionata()) {
+            principessa = p;
+            p.setImprigionata(true);
+        }
+    }
+
+    public void assegnaCavaliere(Cavaliere c) {
+        if (cacciatore == null) {
+            cacciatore = c;
+        }
+    }
+
+    public abstract void usaPotere();
+
+    public void uccidi() {
+        vivo = false;
+
+        if (principessa != null) {
+            principessa.setImprigionata(false);
+            principessa = null;
+        }
     }
 }
