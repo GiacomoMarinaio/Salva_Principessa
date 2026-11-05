@@ -32,7 +32,7 @@ public abstract class Drago {
         }
     }
 
-    public abstract void usaPotere();
+    public abstract String usaPotere();
 
     public void uccidi() {
         vivo = false;
