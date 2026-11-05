@@ -1,11 +1,12 @@
-public class SPR extends Drago {
-
-    public SPR(String nome, int forza) {
-        super(nome, forza);
+public class SPR extends Drago implements Runnable{
+    public SPR(String nome) {
+        super(nome);
     }
-
     @Override
-    public void usaPotere() {
-        System.out.println(nome + " lancia rocce!");
+    public void run() {
+        for (int i = 0; (i < 5) && !Thread.interrupted(); i++) {
+            System.out.println(this.getNome()+
+                    " lancia sassi e si libra nell'aria! Gioia immensa, al battito "+(1+i));
+        }
     }
 }
