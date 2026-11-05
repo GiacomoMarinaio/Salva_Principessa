@@ -1,7 +1,7 @@
 public class SPR extends Drago {
 
-    public SPR(String nome, int forza) {
-        super(nome, forza);
+    public SPR(String nome) {
+        super(nome);
     }
 
     @Override

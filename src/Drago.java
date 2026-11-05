@@ -1,13 +1,11 @@
 public abstract class Drago {
     protected String nome;
-    protected int forza;
     protected Principessa principessa;
     protected Cavaliere cacciatore;
     protected boolean vivo;
 
-    public Drago(String nome, int forza) {
+    public Drago(String nome) {
         this.nome = nome;
-        this.forza = forza;
         this.principessa = null;
         this.cacciatore = null;
         this.vivo = true;
@@ -15,10 +13,6 @@ public abstract class Drago {
 
     public String getNome() {
         return nome;
-    }
-
-    public int getForza() {
-        return forza;
     }
 
     public boolean isVivo() {

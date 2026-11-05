@@ -1,6 +1,6 @@
 public class SPF extends Drago{
-    public SPF(String nome, int forza) {
-        super(nome, forza);
+    public SPF(String nome) {
+        super(nome);
     }
 
     @Override

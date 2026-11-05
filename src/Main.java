@@ -5,9 +5,9 @@ public class Main {
         Principessa p1 = new Principessa("Aurora");
         Principessa p2 = new Principessa("Biancaneve");
 
-        Drago d1 = new SPF("Fiamma", 100);
-        Drago d2 = new SPG("Ghiacciolo", 80);
-        Drago d3 = new SPR("Roccia", 90);
+        Drago d1 = new SPF("Fiamma");
+        Drago d2 = new SPG("Ghiacciolo");
+        Drago d3 = new SPR("Roccia");
 
         Cavaliere c1 = new Cavaliere("Davide");
         Cavaliere c2 = new Cavaliere("San Giorgio");
