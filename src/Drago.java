@@ -16,5 +16,6 @@ public class Drago {
 
     public void getCacciatore(Cavaliere cacciatore){
         this.cacciatore = cacciatore;
+
     }
 }
