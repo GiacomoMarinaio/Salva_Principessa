@@ -1,21 +1,13 @@
 public class Principessa {
     private String nome;
-    private boolean imprigionata;
-
+    private Drago carceriere;
     public Principessa(String nome) {
         this.nome = nome;
-        this.imprigionata = false;
     }
-
-    public String getNome() {
-        return nome;
+    public Drago getCarceriere() {
+        return carceriere;
     }
-
-    public boolean isImprigionata() {
-        return imprigionata;
-    }
-
-    public void setImprigionata(boolean imprigionata) {
-        this.imprigionata = imprigionata;
+    public void setCarceriere(Drago carceriere) {
+        this.carceriere = carceriere;
     }
 }
