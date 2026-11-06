@@ -8,6 +8,7 @@ public class SPF extends Drago implements Runnable{
         return this.getNome() + "sta dando fuoco al villaggio";
     }
 
+
     @Override
     public void run() {
         for(int i = 0; (i < 5) && !Thread.interrupted(); i++) {
