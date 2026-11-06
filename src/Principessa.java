@@ -4,7 +4,7 @@ public class Principessa {
     private String stato;
     public Principessa(String nome) {
         this.nome = nome;
-        this.stato = "libera;"
+        this.stato = "libera";
     }
     public Drago getCarceriere() {
         return carceriere;
@@ -17,7 +17,7 @@ public class Principessa {
         return stato;
     }
 
-    public String setStato(String stato){
+    public void setStato(String stato){
         this.stato = stato;
     }
 }
