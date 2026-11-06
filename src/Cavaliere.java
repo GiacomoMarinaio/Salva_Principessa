@@ -13,7 +13,7 @@ public class Cavaliere implements Runnable{
             try {
                 Thread.sleep(5);
                 System.out.println(nome+ " sta cercando di colpire il drago "+(1+i));
-                dragoDaUccidere.interrupt(); //lancio freccia
+                dragoDaUccidere.interrupt();
             } catch (InterruptedException e) {
                 throw new RuntimeException(e);
             }

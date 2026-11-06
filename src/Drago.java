@@ -13,7 +13,7 @@ public class Drago {
     public void setCacciatore(Cavaliere cacciatore) {
         this.cacciatore = cacciatore;
     }
-    public String getNome() {
+    public String getNome(){
         return nome;
     }
 }

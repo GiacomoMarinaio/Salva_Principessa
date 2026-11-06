@@ -13,8 +13,12 @@ public class Main {
         }
         System.out.println("i draghi sono partiti per distruggere i villaggi");
         sangiorgio.start();
+
+        System.out.println("Giorgio si prepara anch'egli alla battaglia!");
         try {
-            sangiorgio.join();
+            for (Thread t : dragos) {
+                t.join();
+            }
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
